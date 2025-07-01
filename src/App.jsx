@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Nossa nova página
 import Home from "./pages/Home";
 import { ThankYou } from "./pages/ThankYou";
+import { SegEcommerce } from "./pages/SegEcommerce";
 
 // Crie o roteador
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/obrigado", // A nova rota!
     element: <ThankYou />,
+  },
+  {
+    path: "/seg-eccomerce", // A nova rota!
+    element: <SegEcommerce />,
   },
   // Adicione outras rotas aqui, se necessário
 ]);
