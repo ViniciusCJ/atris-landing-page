@@ -14,8 +14,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        obrigado: resolve(__dirname, 'obrigado/index.html')
+        obrigado: resolve(__dirname, 'obrigado/index.html'),
+        segEcommerce: resolve(__dirname, 'seg-ecommerce/index.html'),
       }
     }
   }
+  
 })
