@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import path, { resolve } from 'path'
+import { resolve } from 'path'
 
 export default defineConfig({
+  base: './', // <- IMPORTANTE para rotas relativas
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': resolve(__dirname, './src'),
     },
   },
   build: {
@@ -15,7 +16,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         obrigado: resolve(__dirname, 'obrigado/index.html'),
-        segEcommerce: resolve(__dirname, 'seg-ecommerce/index.html')
+        segEcommerce: resolve(__dirname, 'seg-ecommerce/index.html'),
       }
     }
   }
