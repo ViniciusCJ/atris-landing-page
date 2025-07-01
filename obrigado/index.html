@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! - Atris Agência</title>
+    <meta name="description" content="Obrigado por entrar em contato com a Atris! Em breve nossa equipe entrará em contato.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo-13.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #0d0d0d;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(219, 242, 39, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 4rem;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #0d0d0d;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #dbf227;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #dbf227 0%, #c5d624 100%);
+            color: #0d0d0d;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(219, 242, 39, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(219, 242, 39, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            min-height: 100vh;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            text-align: center;
+            background: white;
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thank-you-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #dbf227 0%, #c5d624 100%);
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #dbf227 0%, #c5d624 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            color: #0d0d0d;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .thank-you-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0d0d0d;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .thank-you-subtitle {
+            font-size: 1.25rem;
+            color: #6d6060;
+            margin-bottom: 2rem;
+            line-height: 1.4;
+        }
+
+        .thank-you-message {
+            font-size: 1.1rem;
+            color: #6d6060;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .next-steps {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border-left: 4px solid #dbf227;
+        }
+
+        .next-steps h3 {
+            color: #0d0d0d;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .next-steps ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .next-steps li {
+            color: #6d6060;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .next-steps li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #dbf227;
+            font-weight: bold;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #0d0d0d;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #dbf227;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #dbf227;
+            color: #0d0d0d;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #0d0d0d;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-logo {
+            height: 3rem;
+            margin-bottom: 1rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-text {
+            color: #6d6060;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: #dbf227;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .thank-you-container {
+                margin: 1rem;
+                padding: 2rem 1.5rem;
+            }
+
+            .thank-you-title {
+                font-size: 2rem;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <img src="../assets/images/logo-13.png" alt="Atris Agência" class="logo">
+            <ul class="nav-links">
+                <li><a href="../#inicio">Início</a></li>
+                <li><a href="../#sobre">Sobre</a></li>
+                <li><a href="../#servicos">Serviços</a></li>
+                <li><a href="../#contato">Contato</a></li>
+                <li><a href="https://respondi.app" class="btn-primary">Falar Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="thank-you-container">
+            <div class="success-icon">
+                <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            
+            <h1 class="thank-you-title">Obrigado! 🎉</h1>
+            <p class="thank-you-subtitle">Sua mensagem foi enviada com sucesso!</p>
+            
+            <p class="thank-you-message">
+                Ficamos muito felizes com seu interesse na <strong>Atris</strong>! 
+                Nossa equipe já recebeu sua mensagem e em breve entraremos em contato 
+                para entender melhor suas necessidades e como podemos ajudar seu negócio a decolar no digital.
+            </p>
+
+            <div class="next-steps">
+                <h3>📋 Próximos Passos:</h3>
+                <ul>
+                    <li>Nossa equipe analisará sua solicitação</li>
+                    <li>Entraremos em contato em até 24 horas</li>
+                    <li>Agendaremos uma conversa para entender suas necessidades</li>
+                    <li>Apresentaremos uma proposta personalizada</li>
+                </ul>
+            </div>
+
+            <div class="action-buttons">
+                <a href="../" class="btn-primary">Voltar ao Início</a>
+                <a href="https://respondi.app" class="btn-secondary">Falar Agora no WhatsApp</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../assets/images/logo-13.png" alt="Atris Agência" class="footer-logo">
+            <p class="footer-text">Transformando ideias em resultados digitais</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">WhatsApp</a>
+            </div>
+            <p class="footer-text">© 2025 Atris Agência. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animação suave para os links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Redirecionamento automático opcional (descomentado se necessário)
+        // setTimeout(() => {
+        //     window.location.href = '../';
+        // }, 10000); // Redireciona após 10 segundos
+    </script>
+</body>
+</html>
+
