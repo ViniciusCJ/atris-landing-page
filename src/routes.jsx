@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider  } from "react-router-dom";
 import App from "./pages/App.jsx";
 import ThankYouPage from "./pages/ThankYouPage.jsx";
-import SegEcommerce from "./seg-ecommerce.jsx";
+import SegEcommerce from "./pages/seg-ecommerce.jsx";
 
 const routes = createBrowserRouter([
     {

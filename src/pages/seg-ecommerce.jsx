@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
-import logo from "./assets/logo-13.png";
+import "../styles/seg-ecommerce.css";
+import logo from "../assets/logo-13.png";
 
 const SegEcommerce = () => {
 
