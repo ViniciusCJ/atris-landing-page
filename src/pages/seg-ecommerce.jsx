@@ -604,8 +604,8 @@ const SegEcommerce = () => {
       </div>
     </section>
       <footer className="footer !p-8">
-        <div className="flex items-center">
-          <img src={logo} alt="Atris Agência" className="footer-logo absolute left-0 items-center" />
+        <div className="flex items-center flex-col md:flex-row">
+          <img src={logo} alt="Atris Agência" className="footer-logo md:absolute left-0 items-center" />
           <div className="flex-col items-center justify-center w-full">
             <p className="footer-text">Transformando ideias em resultados digitais</p>
             <div className="social-links">
