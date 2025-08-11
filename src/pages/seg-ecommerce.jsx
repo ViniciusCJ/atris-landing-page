@@ -135,7 +135,7 @@ const SegEcommerce = () => {
 
             <p className="text-xl text-gray-700 font-medium mb-8">
               Se você se identificou com pelo menos 2 dessas situações,{" "}
-              <span className="atris-green font-bold">continue lendo...</span>
+              <span className="text-atris-green font-bold">continue lendo...</span>
             </p>
 
             <button
@@ -223,9 +223,9 @@ const SegEcommerce = () => {
             </h2>
 
             <p className="text-xl text-gray-700 mb-8">
-            A <strong className="atris-green">Atris</strong> tem a{" "}
+            A <strong className="text-atris-green">Atris</strong> tem a{" "}
             <strong>fórmula exata</strong> que já ajudou{" "}
-            <span className="atris-green font-bold">
+            <span className="text-atris-green font-bold">
                 mais de 200 e-commerces
             </span>{" "}
             a multiplicarem suas vendas sem gastar mais com marketing.
@@ -481,18 +481,18 @@ const SegEcommerce = () => {
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Agende Sua Mentoria Gratuita
-            <span className="block atris-green !text-black !p-1 !mt-4">Agora Mesmo!</span>
+            <span className="block text-atris-green">Agora Mesmo!</span>
           </h2>
 
           <p className="text-xl text-gray-600 mb-8">
             Em apenas 60 minutos, você descobrirá exatamente como{" "}
-            <strong className="atris-green !text-black !p-1">triplicar suas vendas</strong> nos próximos 90 dias
+            <strong className="text-atris-green">triplicar suas vendas</strong> nos próximos 90 dias
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
             {/* Benefícios da Mentoria */}
             <div className="text-left">
-              <h3 className="text-2xl font-bold mb-6 atris-green !text-black !p-1">
+              <h3 className="text-2xl font-bold mb-6 text-atris-green">
                 O que você vai receber na mentoria:
               </h3>
 
