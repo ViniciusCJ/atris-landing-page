@@ -1,4 +1,5 @@
-🛍️ Landing Page para E-commerce
+💥🛍️ LANDING PAGE PARA E-COMMERCE — React + Vite + Tailwind
+
 Bem-vindo ao repositório da Landing Page desenvolvida especialmente para e-commerces que desejam causar uma ótima primeira impressão! 🚀
 
 Este projeto foi criado com foco em performance, design responsivo e uma experiência do usuário agradável – tudo isso com uma pitada de diversão no código. 😉
