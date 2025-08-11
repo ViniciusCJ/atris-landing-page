@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from '@/components/ui/button.jsx'
 import "../styles/thankyou.css";
 import logo from "../assets/logo-13.png";
 
@@ -15,19 +16,26 @@ const ThankYouPage = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-50 to-gray-200">
       {/* Header */}
-      <header className="header fixed top-0 left-0 right-0 z-50">
-        <nav className="nav-container flex items-center justify-between max-w-6xl mx-auto px-6 py-4">
-          <img src={logo} alt="Atris Agência" className="logo h-16 w-auto" />
-          <ul className="nav-links flex items-center gap-8 list-none">
-            <li><a href="../#inicio">Início</a></li>
-            <li><a href="../#sobre">Sobre</a></li>
-            <li><a href="../#servicos">Serviços</a></li>
-            <li><a href="../#contato">Contato</a></li>
-            <li>
-              <a href="https://respondi.app" className="btn-primary">Falar Conosco</a>
-            </li>
-          </ul>
-        </nav>
+      <header className="bg-white shadow-sm border-b sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-6">
+            <div className="flex items-center space-x-3">
+              <img src={logo} alt="Atris" className="h-10 w-auto" />
+            </div>
+            <nav className="hidden md:flex space-x-8">
+              <a href="#sobre" className="text-gray-700 hover:text-atris-green transition-colors font-medium">Sobre</a>
+              <a href="#servicos" className="text-gray-700 hover:text-atris-green transition-colors font-medium">Serviços</a>
+              <a href="#diferenciais" className="text-gray-700 hover:text-atris-green transition-colors font-medium">Diferenciais</a>
+              <a href="#contato" className="text-gray-700 hover:text-atris-green transition-colors font-medium">Contato</a>
+            </nav>
+            <Button 
+              onClick={handleClickWhats}
+              className="atris-green text-black hover:bg-yellow-400 font-bold"
+            >
+              Vamos Conversar!
+            </Button>
+          </div>
+        </div>
       </header>
 
       {/* Main */}
@@ -73,9 +81,9 @@ const ThankYouPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="footer">
-        <div className="flex items-center">
-          <img src={logo} alt="Atris Agência" className="footer-logo absolute left-0 items-center" />
+      <footer className="footer !p-8">
+        <div className="flex items-center flex-col md:flex-row">
+          <img src={logo} alt="Atris Agência" className="footer-logo md:absolute left-0 items-center" />
           <div className="flex-col items-center justify-center w-full">
             <p className="footer-text">Transformando ideias em resultados digitais</p>
             <div className="social-links">
