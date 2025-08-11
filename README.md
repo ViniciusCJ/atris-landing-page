@@ -23,11 +23,14 @@ A página foi pensada para funcionar bem em todos os dispositivos, desde telas m
 
 ```bash
 📂 src
-├── 📁 assets        # Imagens e ícones
-├── 📁 components    # Componentes reutilizáveis (Header, Hero, Products, Footer, etc)
-├── 📁 styles        # CSS base e configurações adicionais
-├── App.jsx          # Componente principal
-└── main.jsx         # Entrada da aplicação
+├── 📁 assets         # Imagens, ícones e outros arquivos estáticos
+├── 📁 components/ui  # Componentes reutilizáveis da interface
+├── 📁 hooks          # Custom hooks utilizados no projeto
+├── 📁 lib            # Funções utilitárias e configurações auxiliares
+├── 📁 pages          # Páginas principais da aplicação (Landing, Sobre, etc.)
+├── 📁 styles         # Estilizações globais e customizações de Tailwind/CSS
+├── 📝 main.jsx       # Ponto de entrada da aplicação
+└── 📝 routes.jsx     # Definição das rotas da aplicação
 ```
 
 🛠️ Como Rodar o Projeto
