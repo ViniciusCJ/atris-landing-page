@@ -1,4 +1,4 @@
-#💥🛍️ LANDING PAGE PARA E-COMMERCE — React + Vite + Tailwind
+# 🛍️ LANDING PAGE PARA E-COMMERCE — React + Vite + Tailwind
 
 Bem-vindo ao repositório da Landing Page desenvolvida especialmente para e-commerces que desejam causar uma ótima primeira impressão! 🚀
 
