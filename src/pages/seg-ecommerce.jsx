@@ -76,7 +76,7 @@ const SegEcommerce = () => {
                 key={idx}
                 className="flex items-center justify-center gap-3 bg-white p-4 rounded-lg shadow-sm"
               >
-                <span className="atris-green">✓</span>
+                <span className="text-atris-green">✓</span>
                 <span className="font-medium">{item}</span>
               </div>
             ))}
