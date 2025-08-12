@@ -28,7 +28,7 @@ const SegEcommerce = () => {
       {/* Header */}
       <header className="header">
         <nav className="nav-container flex justify-between items-center px-6 py-4">
-          <img src={logo} alt="Atris Agência" className="logo !h-8 md:h-10" />
+          <img src={logo} alt="Atris Agência" className="logo !h-6 md:h-10" />
           <a onClick={handleClickWhats}
             className="btn btn-primary"
           >
