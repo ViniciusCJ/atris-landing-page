@@ -119,6 +119,10 @@
   }
 }
 
+* {
+  cursor: pointer
+}
+
 /* Cores customizadas da Atris */
 .atris-green {
   background-color: #dbf227;
