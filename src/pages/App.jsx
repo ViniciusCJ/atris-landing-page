@@ -462,7 +462,7 @@ function App() {
               <div className="bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-atris-black mb-6">
-                    "A Atris não é apenas uma agência, é uma extensão da nossa equipe!"
+                    "Equipe maravilhosa, com muita proatividade e ótimas ideias!"
                   </h3>
                   <div className="flex justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
