@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
+import ClientsCarousel from "../components/ui/infiniteCarousel"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { 
@@ -480,6 +481,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <ClientsCarousel />
 
       {/* CTA Section */}
       <section className="py-20 atris-black relative overflow-hidden">
