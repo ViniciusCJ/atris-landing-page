@@ -58,7 +58,7 @@ export default function ClientsCarousel() {
             className="bg-white rounded-2xl border-t-4 border-t-yellow-300 h-24 w-40 md:w-60
              flex items-center justify-center text-center hover-lift-shadow"
           >
-            <span className="flex items-center justify-center h-24 text-lg font-medium text-black">
+            <span className="flex items-center justify-center h-24 md:text-lg text-xs md:font-medium text-black">
                 {client.name}
             </span>
           </a>
