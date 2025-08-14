@@ -224,7 +224,7 @@ function App() {
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center mb-4">
                   <Globe className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Sites & E-commerce</CardTitle>
+                <CardTitle>Construção de LP</CardTitle>
                 <CardDescription>
                   Criamos sua presença digital do zero
                 </CardDescription>
@@ -237,11 +237,11 @@ function App() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Lojas virtuais completas
+                    Alta Conversão
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Otimização para conversão
+                    Únicos
                   </li>
                 </ul>
               </CardContent>
