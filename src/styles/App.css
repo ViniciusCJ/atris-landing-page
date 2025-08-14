@@ -122,6 +122,17 @@
 button, a {
   cursor: pointer
 }
+
+.hover-lift-shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* sombra padrão neutra */
+}
+
+.hover-lift-shadow:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(219, 242, 39, 0.6); /* sombra amarela no hover */
+}
+
 /* Cores customizadas da Atris */
 .atris-green {
   background-color: #dbf227;

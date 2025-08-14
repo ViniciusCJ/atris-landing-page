@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
+import ClientsCarousel from "../components/ui/infiniteCarousel"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { 
@@ -224,7 +225,7 @@ function App() {
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center mb-4">
                   <Globe className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Sites & E-commerce</CardTitle>
+                <CardTitle>Construção de LP</CardTitle>
                 <CardDescription>
                   Criamos sua presença digital do zero
                 </CardDescription>
@@ -237,11 +238,11 @@ function App() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Lojas virtuais completas
+                    Alta Conversão
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Otimização para conversão
+                    Únicos
                   </li>
                 </ul>
               </CardContent>
@@ -280,24 +281,24 @@ function App() {
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center mb-4">
                   <Palette className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Design & Branding</CardTitle>
+                <CardTitle>Curadoria de conteúdos</CardTitle>
                 <CardDescription>
-                  Sua marca com a cara que merece
+                  Sua marca com o melhor conteúdo
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Identidade visual completa
+                    Ideias de Conteúdos
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Materiais gráficos
+                    Conectam com sua audiência
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Estratégia de marca
+                    Conteúdos autênticos
                   </li>
                 </ul>
               </CardContent>
@@ -336,24 +337,24 @@ function App() {
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center mb-4">
                   <BarChart3 className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Analytics & Relatórios</CardTitle>
+                <CardTitle>Captação de conteúdos</CardTitle>
                 <CardDescription>
-                  Dados que orientam decisões
+                  Ideias que viram conteúdo
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Relatórios detalhados
+                    Captação profissional
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Análise de performance
+                    Edição dos conteúdos
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Insights estratégicos
+                    Pronto para postar
                   </li>
                 </ul>
               </CardContent>
@@ -410,10 +411,9 @@ function App() {
                     <Rocket className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-atris-black mb-2">Agilidade que Impressiona</h3>
+                    <h3 className="text-xl font-bold text-atris-black mb-2">1 Mês de conteúdo em 1 dia</h3>
                     <p className="text-gray-600">
-                      Respondemos em até 24h e entregamos projetos no prazo. 
-                      Porque sabemos que tempo é dinheiro no seu negócio!
+                      Produzimos todo o seu conteúdo do próximo mês em um único dia. Garantindo que seus meses sejam 100% programados e completos.
                     </p>
                   </div>
                 </div>
@@ -463,7 +463,7 @@ function App() {
               <div className="bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-atris-black mb-6">
-                    "A Atris não é apenas uma agência, é uma extensão da nossa equipe!"
+                    "Equipe maravilhosa, com muita proatividade e ótimas ideias!"
                   </h3>
                   <div className="flex justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -481,6 +481,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <ClientsCarousel />
 
       {/* CTA Section */}
       <section className="py-20 atris-black relative overflow-hidden">
