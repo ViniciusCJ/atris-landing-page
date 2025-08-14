@@ -410,10 +410,9 @@ function App() {
                     <Rocket className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-atris-black mb-2">Agilidade que Impressiona</h3>
+                    <h3 className="text-xl font-bold text-atris-black mb-2">1 Mês de conteúdo em 1 dia</h3>
                     <p className="text-gray-600">
-                      Respondemos em até 24h e entregamos projetos no prazo. 
-                      Porque sabemos que tempo é dinheiro no seu negócio!
+                      Produzimos todo o seu conteúdo do próximo mês em um único dia. Garantindo que seus meses sejam 100% programados e completos.
                     </p>
                   </div>
                 </div>
