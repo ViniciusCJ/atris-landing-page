@@ -336,24 +336,24 @@ function App() {
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center mb-4">
                   <BarChart3 className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Analytics & Relatórios</CardTitle>
+                <CardTitle>Captação de conteúdos</CardTitle>
                 <CardDescription>
-                  Dados que orientam decisões
+                  Ideias que viram conteúdo
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Relatórios detalhados
+                    Captação profissional
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Análise de performance
+                    Edição dos conteúdos
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Insights estratégicos
+                    Pronto para postar
                   </li>
                 </ul>
               </CardContent>
