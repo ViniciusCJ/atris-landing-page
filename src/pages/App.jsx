@@ -280,24 +280,24 @@ function App() {
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center mb-4">
                   <Palette className="h-6 w-6 text-black" />
                 </div>
-                <CardTitle>Design & Branding</CardTitle>
+                <CardTitle>Curadoria de conteúdos</CardTitle>
                 <CardDescription>
-                  Sua marca com a cara que merece
+                  Sua marca com o melhor conteúdo
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Identidade visual completa
+                    Ideias de Conteúdos
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Materiais gráficos
+                    Conectam com sua audiência
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-atris-green mr-2" />
-                    Estratégia de marca
+                    Conteúdos autênticos
                   </li>
                 </ul>
               </CardContent>
