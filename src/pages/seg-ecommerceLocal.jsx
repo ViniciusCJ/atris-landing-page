@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/seg-ecommerce.css";
 import logo from "../assets/logo-13.png";
 
-const SegEcommerce = () => {
+const SegEcommerceLocal = () => {
 
   const scrollToForm = () => {
     const target = document.getElementById("formulario");
@@ -621,4 +621,4 @@ const SegEcommerce = () => {
   );
 };
 
-export default SegEcommerce;
+export default SegEcommerceLocal;
