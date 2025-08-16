@@ -41,7 +41,7 @@ const SegEcommerce = () => {
       <section className="section-hero py-16 text-center">
         <div className="container">
           <div className="badge badge-alert mb-6">
-            ⚠️ ALERTA: Seu E-commerce Pode Estar Perdendo Dinheiro
+            ⚠️ ALERTA para lojistas de Franca e região: Seu E-commerce Pode Estar Perdendo Dinheiro
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
