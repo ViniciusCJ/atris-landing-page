@@ -41,11 +41,11 @@ const SegEcommerceLocal = () => {
       <section className="section-hero py-16 text-center">
         <div className="container">
           <div className="badge badge-alert mb-6">
-            ⚠️ ALERTA para lojistas de Franca e região: Seu E-commerce Pode Estar Perdendo Dinheiro
+            ⚠️ ALERTA para empresários de Franca e região: Seu Negócio Local Pode Estar Perdendo Dinheiro
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Seu E-commerce Está Perdendo{" "}
+            Seu Negócio Está Perdendo{" "}
             <span className="atris-green-highlight">R$ 10.000+ Por Mês?</span>
           </h1>
 
@@ -68,7 +68,7 @@ const SegEcommerceLocal = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
-              "Análise Completa do Seu E-commerce",
+              "Análise Completa do Seu Negócio",
               "Estratégia Personalizada",
               "Plano de Ação Imediato",
             ].map((item, idx) => (
@@ -89,7 +89,7 @@ const SegEcommerceLocal = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-              Você é Dono de E-commerce e Sente Que...
+              Você é Empresário e Sente Que...
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -197,7 +197,7 @@ const SegEcommerceLocal = () => {
               </h3>
               <ul className="space-y-3 max-w-2xl mx-auto">
                 {[
-                  "Perder market share para concorrentes mais preparados",
+                  "Perder espaço para concorrentes mais preparados",
                   "Continuar desperdiçando dinheiro em estratégias que não funcionam",
                   "Ver seu negócio estagnar enquanto outros crescem exponencialmente",
                   "Perder a janela de oportunidade do mercado digital",
@@ -225,7 +225,7 @@ const SegEcommerceLocal = () => {
             A <strong className="text-atris-green">Atris</strong>, aqui de Franca, tem a{" "}
             <strong>fórmula exata</strong> que já ajudou{" "}
             <span className="text-atris-green font-bold">
-                mais de 200 e-commerces
+                mais de 200 negócios
             </span>{" "}
             a multiplicarem suas vendas sem gastar mais com marketing.
             </p>
@@ -293,11 +293,10 @@ const SegEcommerceLocal = () => {
         <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Como Transformamos Seu E-commerce
+            Como Transformamos Seu Negócio
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Nossa metodologia exclusiva aborda todos os pontos críticos do
-            seu negócio digital
+            Nossa metodologia exclusiva aborda todos os pontos críticos para crescimento sustentável
             </p>
         </div>
 
@@ -371,11 +370,11 @@ const SegEcommerceLocal = () => {
         <div className="text-center mt-12">
             <div className="bg-white border-2 border-green-200 rounded-lg p-6 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                Pronto para Transformar Seu E-commerce?
+                Pronto para Transformar Seu Negócio?
             </h3>
             <p className="text-gray-600 mb-6">
                 Agende sua mentoria gratuita e descubra como implementar essas
-                estratégias no seu negócio
+                estratégias em sua empresa
             </p>
             <button
                 className="btn btn-primary btn-lg pulse-green"
@@ -400,14 +399,14 @@ const SegEcommerceLocal = () => {
               Resultados Reais de Clientes Reais
             </h2>
             <p className="text-xl text-gray-600">
-              Veja como transformamos e-commerces em máquinas de vendas
+              Veja como transformamos negócios locais em verdadeiras máquinas de vendas
             </p>
           </div>
 
           {/* Números */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 !mb-10">
             {[
-              { numero: "200+", texto: "E-commerces Transformados" },
+              { numero: "200+", texto: "Negócios Transformados" },
               { numero: "347%", texto: "Aumento Médio de Vendas" },
               { numero: "R$ 50M", texto: "Gerados para Clientes" },
               { numero: "98%", texto: "Taxa de Satisfação" },
@@ -437,7 +436,7 @@ const SegEcommerceLocal = () => {
                 cargo: "Fundador, TechStore",
               },
               {
-                texto: `Finalmente encontrei uma agência que entende de e-commerce de verdade. 
+                texto: `Finalmente encontrei uma agência que entende de negócios locais de verdade. 
                         Resultados desde a primeira semana!`,
                 iniciais: "AL",
                 nome: "Ana Luiza",
@@ -498,7 +497,7 @@ const SegEcommerceLocal = () => {
               <div className="space-y-4">
                 {[
                   {
-                    titulo: "Diagnóstico Completo do Seu E-commerce",
+                    titulo: "Diagnóstico Completo do Seu Negócio",
                     desc: "Análise detalhada de todos os pontos de melhoria",
                   },
                   {
