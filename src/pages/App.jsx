@@ -96,7 +96,7 @@ function App() {
                   onClick={handleClickForms}
                   className="atris-green text-black hover:bg-yellow-400 text-lg px-8 py-4 font-bold hover-lift"
                 >
-                  Quero Meu Impulso Digital
+                  Preencher o Formulário
                   <Rocket className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -501,7 +501,7 @@ function App() {
               onClick={handleClickWhats}
               className="atris-green text-black hover:bg-yellow-400 text-lg px-8 py-4 font-bold hover-lift"
             >
-              Quero Conversar Agora!
+              Preencher o Formulário
               <MessageCircle className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -576,7 +576,7 @@ function App() {
                     onClick={handleClickForms}
                     className="w-full atris-green text-black hover:bg-yellow-400 font-bold py-3"
                   >
-                    Iniciar Conversa no Respondi
+                    Preencher o Formulário
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
