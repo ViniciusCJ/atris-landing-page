@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider  } from "react-router-dom";
 import App from "./pages/App.jsx";
 import ThankYouPage from "./pages/ThankYouPage.jsx";
 import SegEcommerce from "./pages/seg-ecommerce.jsx";
-import SegEcommerceLocal from "./pages/seg-ecommerceLocal.jsx";
+import SegEcommerceLocal from "./pages/seg-local.jsx";
 
 const routes = createBrowserRouter([
     {
@@ -18,7 +18,7 @@ const routes = createBrowserRouter([
         element: <SegEcommerce />
     },
     {
-        path: "/seg-ecommerceLocal",
+        path: "/seg-local",
         element: <SegEcommerceLocal />
     }
 ])
