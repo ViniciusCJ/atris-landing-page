@@ -41,7 +41,7 @@ const SegEcommerce = () => {
       <section className="section-hero py-16 text-center">
         <div className="container">
           <div className="badge badge-alert mb-6">
-            ⚠️ ALERTA para lojistas de Franca e região: Seu E-commerce Pode Estar Perdendo Dinheiro
+            ⚠️ ALERTA: Seu E-commerce Pode Estar Perdendo Dinheiro
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -222,7 +222,7 @@ const SegEcommerce = () => {
             </h2>
 
             <p className="text-xl text-gray-700 mb-8">
-            A <strong className="text-atris-green">Atris</strong>, aqui de Franca, tem a{" "}
+            A <strong className="text-atris-green">Atris</strong> tem a{" "}
             <strong>fórmula exata</strong> que já ajudou{" "}
             <span className="text-atris-green font-bold">
                 mais de 200 e-commerces
@@ -475,11 +475,11 @@ const SegEcommerce = () => {
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
           <div className="badge badge-success mb-6">
-            🎁 Oferta Exclusiva para Franca e Região
+            🎁 OFERTA LIMITADA - 100% GRATUITO
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Agende sua Mentoria 100% gratuita (valor real: R$ 2.500).
+            Agende Sua Mentoria Gratuita
             <span className="block text-atris-green">Agora Mesmo!</span>
           </h2>
 
@@ -564,7 +564,6 @@ const SegEcommerce = () => {
                       style={{
                         fontSize: "0.875rem",
                         color: "#000000",
-                        marginBottom: "10px"
                       }}
                     >
                       ⏰ Apenas 60 minutos • 100% Gratuito • Sem Compromisso
