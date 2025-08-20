@@ -531,7 +531,7 @@ function App() {
           </div>
 
           <div className="flex gap-12 items-center justify-center">
-            <div className="flex gap-7">
+            <div className="flex flex-col md:flex-row gap-7">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center">
                   <Mail className="h-6 w-6 text-black" />
