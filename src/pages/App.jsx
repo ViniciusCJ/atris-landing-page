@@ -78,18 +78,17 @@ function App() {
 
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 atris-pattern opacity-5"></div>
         <div className="max-w-7xl mx-auto relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold text-atris-black mb-6 leading-tight">
+              <h1 className="text-3xl md:text-5xl text-center font-bold text-atris-black mb-6 leading-tight">
                 SUA MARCA MERECE 
                 <span className="text-atris-green"> DESTAQUE NO DIGITAL</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed pr-2 md:pr-0">
+              <p className="flex text-xl text-center justify-center text-gray-600 mb-8 px-5 leading-relaxed md:pr-0">
                 Somos uma agência criativa e próxima, que fala a sua língua e cuida de tudo para vocÊ ter a presença online - Mesmo sem entender nada de marketing digital
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col justify-center mb-10 sm:flex-row gap-4">
                 <Button 
                   size="lg" 
                   onClick={handleClickForms}
@@ -101,9 +100,9 @@ function App() {
               </div>
             </div>
             <div className="relative flex justify-center">
-              <div className="relative z-10 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl p-1 md:p-1 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div className="relative z-10 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl px-1 py-5 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <div className="flex justify-center">
-                  <video className='rounded-3xl h-100' src={video}></video>
+                  <video className='rounded-3xl md:h-140' src={video}></video>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-32 h-32 atris-green rounded-full opacity-20 animate-pulse"></div>
@@ -117,59 +116,36 @@ function App() {
       <section className="py-16 atris-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2 animate-bounce [animation-duration:2s]">100+</div>
-              <div className="text-white">Projetos Entregues</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2 animate-bounce [animation-duration:1s]">95%</div>
-              <div className="text-white">Clientes Satisfeitos</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2 animate-ping [animation-duration:5s]">3x</div>
-              <div className="text-white">Aumento Médio em Vendas</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2 animate-pulse [animation-duration:1s]">24h</div>
-              <div className="text-white">Resposta Garantida</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="py-16 atris-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               {
                 value: "100+",
-                text: "Projetos Entregues"
+                text: "Projetos Entregues",
+                animate: "bounce"
               },
               {
                 value: "95%",
-                text: "Clientes Satisfeitos"
+                text: "Clientes Satisfeitos",
+                animate: "ping"
               },
               {
                 value: "3x",
-                text: "Aumento Médio em Vendas"
+                text: "Aumento Médio em Vendas",
+                animate: "ping"
               },
               {
                 value: "24h",
-                text: "Resposta Garantida"
+                text: "Resposta Garantida",
+                animate: "pulse"
               },
             ].map((obj) => (
               <div>
-                <div className="text-4xl font-bold text-atris-green mb-2 animate-bounce [animation-duration:2s]">{obj.value}</div>
+                <div className={`text-4xl font-bold text-atris-green mb-2 animate-${obj.animate} [animation-duration:2s]`}>{obj.value}</div>
                 <div className="text-white">{obj.text}</div>
             </div>
             ))}
           </div>
         </div>
       </section>
-
-      <VerticalCarousel />
-
-      <HoriCarousel />
-
       {/* About Section */}
       <section id="sobre" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
