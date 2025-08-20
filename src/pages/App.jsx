@@ -530,7 +530,7 @@ function App() {
             </p>
           </div>
 
-          <div className="flex gap-12 items-center">
+          <div className="flex gap-12 items-center justify-center">
             <div className="flex gap-7">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center">
@@ -553,14 +553,14 @@ function App() {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center">
-                  <a onClick={handleClickInsta} href="#">
+                <div onClick={handleClickInsta} className="w-12 h-12 atris-green rounded-lg flex items-center justify-center cursor-pointer">
+                  <a href="#">
                     <Instagram className="h-6 w-6 text-black" />
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-bold text-atris-black">WhatsApp</h3>
-                  <p className="text-gray-600"> (16) 99136-9645</p>
+                  <h3 className="font-bold text-atris-black">Instagram</h3>
+                  <p className="text-gray-600">@agenciaatris</p>
                 </div>
               </div>
             </div>
