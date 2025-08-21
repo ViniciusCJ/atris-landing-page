@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button.jsx'
 import ClientsCarousel from "../components/ui/infiniteCarousel"
 import VerticalCarousel from "../components/ui/verticalCarrousel"
 import HoriCarousel from "../components/ui/horiCarrousel"
+import ImagesCarousel from '@/components/ui/depoimento'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { 
@@ -86,7 +87,7 @@ function App() {
                 <br />
                 <span className="text-atris-green"> DESTAQUE NO DIGITAL</span>
               </h1>
-              <p className="flex text-xl md:text-3xl text-center justify-center text-gray-600 mb-8 px-5 md:px-50 leading-relaxed">
+              <p className="flex text-xl md:text-2xl text-center justify-center text-gray-600 mb-8 px-5 md:px-50 leading-relaxed">
                 Somos uma agência criativa e próxima, que fala a sua língua e cuida de tudo para você ter a presença online - Mesmo sem entender nada de marketing digital
               </p>
               <div className="flex flex-col justify-center mb-10 sm:flex-row gap-4">
@@ -472,8 +473,7 @@ function App() {
       </div>
 
       {/* CTA Section */}
-      <section className="py-20 atris-black relative overflow-hidden">
-        <div className="absolute inset-0 atris-pattern opacity-10"></div>
+      <section className="py-20 atris-black relative overflow-hidden">        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Pronto para dar o próximo passo?
@@ -494,6 +494,11 @@ function App() {
             </Button>
           </div>
         </div>
+      </section>
+
+      {/*Depoimentos*/}
+      <section>
+        <ImagesCarousel />
       </section>
 
       {/* Contact Section */}
