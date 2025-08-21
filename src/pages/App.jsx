@@ -100,9 +100,9 @@ function App() {
               </div>
             </div>
             <div className="relative flex justify-center">
-              <div className="relative z-10 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl px-1 py-5 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div className="relative z-10 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl px-1 py-5 shadow-[0_0_30px_40px_rgba(255,255,0,0.5)] ">
                 <div className="flex justify-center">
-                  <video className='rounded-3xl md:h-140' src={video}></video>
+                  <video className='rounded-3xl md:h-140' controls autoPlay muted loop src={video}></video>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-32 h-32 atris-green rounded-full opacity-20 animate-pulse"></div>
@@ -466,7 +466,9 @@ function App() {
         </div>
       </section>
 
-      <ClientsCarousel />
+      <div id="parceiros" className='flex'>
+        <ClientsCarousel />
+      </div>
 
       {/* CTA Section */}
       <section className="py-20 atris-black relative overflow-hidden">
@@ -569,8 +571,8 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-4 text-atris-green">Empresa</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Sobre Nós</li>
-                <li>Nossos Cases</li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#parceiros">Nossos Cases</a></li>
                 <li>Blog</li>
                 <li>Carreira</li>
               </ul>
