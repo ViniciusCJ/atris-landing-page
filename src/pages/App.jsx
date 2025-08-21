@@ -83,10 +83,11 @@ function App() {
             <div>
               <h1 className="text-3xl md:text-5xl text-center font-bold text-atris-black mb-6 leading-tight">
                 SUA MARCA MERECE 
+                <br />
                 <span className="text-atris-green"> DESTAQUE NO DIGITAL</span>
               </h1>
-              <p className="flex text-xl text-center justify-center text-gray-600 mb-8 px-5 leading-relaxed md:pr-0">
-                Somos uma agência criativa e próxima, que fala a sua língua e cuida de tudo para vocÊ ter a presença online - Mesmo sem entender nada de marketing digital
+              <p className="flex text-xl md:text-3xl text-center justify-center text-gray-600 mb-8 px-5 md:px-50 leading-relaxed">
+                Somos uma agência criativa e próxima, que fala a sua língua e cuida de tudo para você ter a presença online - Mesmo sem entender nada de marketing digital
               </p>
               <div className="flex flex-col justify-center mb-10 sm:flex-row gap-4">
                 <Button 
@@ -125,17 +126,17 @@ function App() {
               {
                 value: "95%",
                 text: "Clientes Satisfeitos",
-                animate: "ping"
+                animate: "bounce"
               },
               {
                 value: "3x",
                 text: "Aumento Médio em Vendas",
-                animate: "ping"
+                animate: "bounce"
               },
               {
                 value: "24h",
                 text: "Resposta Garantida",
-                animate: "pulse"
+                animate: "bounce"
               },
             ].map((obj) => (
               <div>
