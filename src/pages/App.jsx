@@ -1,11 +1,8 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import ClientsCarousel from "../components/ui/infiniteCarousel"
-import VerticalCarousel from "../components/ui/verticalCarrousel"
-import HoriCarousel from "../components/ui/horiCarrousel"
 import ImagesCarousel from '@/components/ui/depoimento'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
-import { Badge } from '@/components/ui/badge.jsx'
 import { 
   Calendar,
   Handshake,
@@ -35,7 +32,6 @@ import {
 } from 'lucide-react'
 import '../styles/App.css'
 import atrisLogo from '../assets/logo-13.png'
-import video from "../assets/teste.mp4"
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -104,7 +100,9 @@ function App() {
             <div className="relative flex justify-center">
               <div className="relative z-10 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl px-1 py-5 shadow-[0_0_30px_40px_rgba(255,255,0,0.5)] ">
                 <div className="flex justify-center">
-                  <video className='rounded-3xl md:h-140' controls autoPlay muted loop src={video}></video>
+                  <video className='rounded-3xl md:h-140' controls autoPlay muted loop>
+                    <source src="https://github.com/ViniciusCJ/atris-landing-page/releases/download/v1.0.0/video.vsl.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-32 h-32 atris-green rounded-full opacity-20 animate-pulse"></div>
@@ -497,9 +495,7 @@ function App() {
       </section>
 
       {/*Depoimentos*/}
-      <section>
-        <ImagesCarousel />
-      </section>
+      <ImagesCarousel />
 
       {/* Contact Section */}
       <section id="contato" className="py-20 bg-white">
