@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import ClientsCarousel from "../components/ui/infiniteCarousel"
+import ImagesCarousel from '@/components/ui/depoimento'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
-import { Badge } from '@/components/ui/badge.jsx'
 import { 
+  Calendar,
+  Handshake,
   ArrowRight,
   Zap,
   Target,
@@ -73,44 +75,34 @@ function App() {
 
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 atris-pattern opacity-5"></div>
         <div className="max-w-7xl mx-auto relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col gap-12 items-center">
             <div>
-              <Badge className="mb-6 atris-green text-black hover:bg-yellow-400 text-lg px-4 py-2">
-                🚀 Sua marca merece destaque!
-              </Badge>
-              <h1 className="text-4xl md:text-6xl font-bold text-atris-black mb-6 leading-tight">
-                O ponto de partida para 
-                <span className="text-atris-green block">negócios que querem</span>
-                <span className="text-atris-green">um impulso no digital</span>
+              <h1 className="text-3xl md:text-5xl text-center font-bold text-atris-black mb-6 leading-tight">
+                SUA MARCA MERECE 
+                <br />
+                <span className="text-atris-green"> DESTAQUE NO DIGITAL</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Uma agência criativa e próxima, que simplifica o universo digital 
-                para pequenos negócios. Porque acreditamos que toda ideia merece 
-                ser vista e toda marca tem potencial para brilhar! ✨
+              <p className="flex text-xl md:text-2xl text-center justify-center text-gray-600 mb-8 px-5 md:px-50 leading-relaxed">
+                Somos uma agência criativa e próxima, que fala a sua língua e cuida de tudo para você ter a presença online - Mesmo sem entender nada de marketing digital
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col justify-center mb-10 sm:flex-row gap-4">
                 <Button 
                   size="lg" 
                   onClick={handleClickForms}
-                  className="atris-green text-black hover:bg-yellow-400 text-lg px-8 py-4 font-bold hover-lift"
+                  className="atris-green text-black hover:bg-yellow-400 px-8 py-4 text-sm md:text-lg font-bold hover-lift"
                 >
-                  Preencher o Formulário
+                  Vamos conversar sobre o seu projeto
                   <Rocket className="ml-2 h-5 w-5" />
                 </Button>
               </div>
             </div>
-            <div className="relative">
-              <div className="relative z-10 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="text-center">
-                  <Sparkles className="h-16 w-16 text-atris-black mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-atris-black mb-4">
-                    Estamos prontos para ser o ponto de virada na sua trajetória digital!
-                  </h3>
-                  <p className="text-atris-black font-medium">
-                    E você? 🤔
-                  </p>
+            <div className="relative flex justify-center">
+              <div className="relative z-10 bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl px-1 py-5 shadow-[0_0_30px_40px_rgba(255,255,0,0.5)] ">
+                <div className="flex justify-center">
+                  <video className='rounded-3xl md:h-140' controls autoPlay muted loop>
+                    <source src="https://github.com/ViniciusCJ/atris-landing-page/releases/download/v1.0.0/video.vsl.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-32 h-32 atris-green rounded-full opacity-20 animate-pulse"></div>
@@ -124,36 +116,48 @@ function App() {
       <section className="py-16 atris-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2">100+</div>
-              <div className="text-white">Projetos Entregues</div>
+            {[
+              {
+                value: "100+",
+                text: "Projetos Entregues",
+                animate: "bounce"
+              },
+              {
+                value: "95%",
+                text: "Clientes Satisfeitos",
+                animate: "bounce"
+              },
+              {
+                value: "3x",
+                text: "Aumento Médio em Vendas",
+                animate: "bounce"
+              },
+              {
+                value: "24h",
+                text: "Resposta Garantida",
+                animate: "bounce"
+              },
+            ].map((obj) => (
+              <div>
+                <div className={`text-4xl font-bold text-atris-green mb-2 animate-${obj.animate} [animation-duration:2s]`}>{obj.value}</div>
+                <div className="text-white">{obj.text}</div>
             </div>
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2">95%</div>
-              <div className="text-white">Clientes Satisfeitos</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2">3x</div>
-              <div className="text-white">Aumento Médio em Vendas</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-atris-green mb-2">24h</div>
-              <div className="text-white">Resposta Garantida</div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="sobre" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-atris-black mb-4">
-              Somos inovadores, conectados, criativos, próximos e acessíveis
+            <h2 className="text-3xl md:text-5xl font-bold text-atris-black mb-4">
+              QUEM É ATRIS?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Acreditamos que o marketing digital não precisa ser complicado. 
-              Nossa missão é tornar o digital simples, divertido e eficaz para seu negócio! 🎯
+            <p className="text-2xl text-gray-600 max-w-3xl md:max-w-4xl mx-auto mb-4">
+              Somos apaixonados por ajudar negócios locais a saírem do anonimato e conquistarem o espaço que merecem no digital.
+            </p>
+            <p className="text-lg text-gray-600 max-w-3xl md:max-w-5xl mx-auto">
+              Sabemos que cuidar de um negócio sozinho não é fácil. Por isso, nossa missão é <span className='text-atris-green'> simplificar o marketing</span>, tornar ele leve, eficiente e acessível. Sem enrolação, sem fórmulas mágicas. Só o que funciona de verdade.
             </p>
           </div>
           
@@ -210,12 +214,12 @@ function App() {
       <section id="servicos" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-atris-black mb-4">
-              Nossos Serviços que Fazem a Diferença
+            <h2 className="text-3xl md:text-5xl font-bold text-atris-black mb-4">
+              O QUE FAZEMOS POR VOCÊ
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Do planejamento à execução, cuidamos de tudo para que você possa focar 
-              no que faz de melhor: cuidar do seu negócio! 💪
+              Você cuida do seu negócio. A gente cuida do digital.
+              Do planejamento à execução, entregamos tudo pronto e com resultado.
             </p>
           </div>
           
@@ -408,38 +412,39 @@ function App() {
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 atris-green rounded-full flex items-center justify-center flex-shrink-0">
-                    <Rocket className="h-6 w-6 text-black" />
+                    <Calendar className="h-6 w-6 text-black" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-atris-black mb-2">1 Mês de conteúdo em 1 dia</h3>
                     <p className="text-gray-600">
-                      Produzimos todo o seu conteúdo do próximo mês em um único dia. Garantindo que seus meses sejam 100% programados e completos.
+                      Produzimos todo o seu conteúdo mensal em apenas um dia. Tudo pronto, organizado e programado.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 atris-green rounded-full flex items-center justify-center flex-shrink-0">
-                    <Heart className="h-6 w-6 text-black" />
+                    <Handshake className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-atris-black mb-2">Proximidade Real</h3>
+                    <h3 className="text-xl font-bold text-atris-black mb-2">Proximidade de Verdade</h3>
                     <p className="text-gray-600">
-                      Não somos apenas fornecedores, somos parceiros. Estamos aqui 
-                      para celebrar suas vitórias e superar os desafios juntos.
+                      Nada de agência fria. Você fala direto com quem está cuidando do seu projeto, sempre com atenção e parceria.
                     </p>
                   </div>
                 </div>
-
+              </div>
+            </div>
+            <div>
+              <div className="space-y-8">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 atris-green rounded-full flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-atris-black mb-2">Resultados Comprovados</h3>
+                    <h3 className="text-xl font-bold text-atris-black mb-2">Resultados que Aparecem</h3>
                     <p className="text-gray-600">
-                      Nossos clientes veem resultados reais: mais leads, mais vendas, 
-                      mais reconhecimento. E você será o próximo!
+                      Mais leads. Mais clientes. Mais reconhecimento local. E tudo com acompanhamento claro e transparente.
                     </p>
                   </div>
                 </div>
@@ -449,51 +454,32 @@ function App() {
                     <Lightbulb className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-atris-black mb-2">Criatividade sem Limites</h3>
+                    <h3 className="text-xl font-bold text-atris-black mb-2">Criatividade com Estratégia</h3>
                     <p className="text-gray-600">
-                      Cada projeto é único, assim como seu negócio. Criamos soluções 
-                      personalizadas que fazem sua marca se destacar.
+                      Cada projeto é pensado para destacar sua marca e atrair mais clientes — sem fórmulas prontas.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div className="relative">
-              <div className="bg-gradient-to-br from-yellow-400 to-yellow-300 rounded-3xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-atris-black mb-6">
-                    "Equipe maravilhosa, com muita proatividade e ótimas ideias!"
-                  </h3>
-                  <div className="flex justify-center mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-6 w-6 fill-atris-black text-atris-black" />
-                    ))}
-                  </div>
-                  <p className="text-atris-black font-medium">
-                    Cliente satisfeito da Atris
-                  </p>
-                </div>
-              </div>
-              <div className="absolute -top-4 -left-4 w-32 h-32 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 atris-green rounded-full opacity-30 animate-bounce"></div>
-            </div>
           </div>
         </div>
       </section>
 
-      <ClientsCarousel />
+      <div id="parceiros" className='flex'>
+        <ClientsCarousel />
+      </div>
 
       {/* CTA Section */}
-      <section className="py-20 atris-black relative overflow-hidden">
-        <div className="absolute inset-0 atris-pattern opacity-10"></div>
+      <section className="py-20 atris-black relative overflow-hidden">        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Pronto para dar o próximo passo?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Vamos conversar sobre como podemos impulsionar seu negócio no digital. 
-            É só clicar no botão abaixo e começar essa jornada incrível! 🚀
+            Você não precisa saber tudo sobre marketing digital. Só precisa dar o primeiro passo.
+            <br />
+            A Atris cuida do resto.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -501,12 +487,15 @@ function App() {
               onClick={handleClickWhats}
               className="atris-green text-black hover:bg-yellow-400 text-lg px-8 py-4 font-bold hover-lift"
             >
-              Preencher o Formulário
+              Agendar reunião com a assessoria
               <MessageCircle className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
       </section>
+
+      {/*Depoimentos*/}
+      <ImagesCarousel />
 
       {/* Contact Section */}
       <section id="contato" className="py-20 bg-white">
@@ -521,67 +510,40 @@ function App() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-atris-black">Email</h3>
-                    <p className="text-gray-600">contato@atris.com.br</p>
-                  </div>
+          <div className="flex gap-12 items-center justify-center">
+            <div className="flex flex-col md:flex-row gap-7">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center">
+                  <Mail className="h-6 w-6 text-black" />
                 </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-atris-black">WhatsApp</h3>
-                    <p className="text-gray-600"> (16) 99136-9645</p>
-                  </div>
+                <div>
+                  <h3 className="font-bold text-atris-black">Email</h3>
+                  <p className="text-gray-600">contato@atris.com.br</p>
                 </div>
               </div>
-
-              <div className="mt-8">
-                <h3 className="font-bold text-atris-black mb-4">Nos siga no Instragram:</h3>
-                <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 atris-green rounded-lg flex items-center justify-center hover:bg-yellow-400 transition-colors">
-                    <Instagram onClick={handleClickInsta} className="h-5 w-5 text-black" />
+              
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 atris-green rounded-lg flex items-center justify-center">
+                  <Phone className="h-6 w-6 text-black" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-atris-black">WhatsApp</h3>
+                  <p className="text-gray-600"> (16) 99136-9645</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center space-x-4">
+                <div onClick={handleClickInsta} className="w-12 h-12 atris-green rounded-lg flex items-center justify-center cursor-pointer">
+                  <a href="#">
+                    <Instagram className="h-6 w-6 text-black" />
                   </a>
+                </div>
+                <div>
+                  <h3 className="font-bold text-atris-black">Instagram</h3>
+                  <p className="text-gray-600">@agenciaatris</p>
                 </div>
               </div>
             </div>
-
-            <Card className="hover-lift">
-              <CardHeader>
-                <CardTitle>Vamos começar seu projeto!</CardTitle>
-                <CardDescription>
-                  Clique no botão abaixo e vamos conversar sobre suas necessidades
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="text-center py-8">
-                  <Sparkles className="h-16 w-16 text-atris-green mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-atris-black mb-4">
-                    Pronto para decolar? 🚀
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Clique no botão abaixo e vamos conversar sobre como podemos 
-                    transformar sua presença digital!
-                  </p>
-                  <Button 
-                    onClick={handleClickForms}
-                    className="w-full atris-green text-black hover:bg-yellow-400 font-bold py-3"
-                  >
-                    Preencher o Formulário
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -611,8 +573,8 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-4 text-atris-green">Empresa</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>Sobre Nós</li>
-                <li>Nossos Cases</li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#parceiros">Nossos Cases</a></li>
                 <li>Blog</li>
                 <li>Carreira</li>
               </ul>
